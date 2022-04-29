@@ -1,7 +1,6 @@
 package com.mercadolivro.model
 
 import com.mercadolivro.enums.CustomerStatus
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type
 import javax.persistence.*
 
 @Entity(name = "customer")
