@@ -43,13 +43,13 @@ class BookController (
     }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.OK)
     fun delete(@PathVariable id: Int) {
         bookService.delete(id)
     }
 
     @PutMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ResponseStatus(HttpStatus.OK)
     fun update(@PathVariable id: Int, @RequestBody book : PutBookRequest) {
         val bookSaved = bookService.findById(id)
         bookService.update(book.toBookModel(bookSaved))
