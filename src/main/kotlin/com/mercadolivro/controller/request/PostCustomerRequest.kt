@@ -10,6 +10,6 @@ data class PostCustomerRequest(
     var name: String,
 
     @field:Email(message = "E-mail deve ser válido")
-    @EmailAvailable
+    @EmailAvailable(message = "E-mail já está em uso")
     var email: String
 )
