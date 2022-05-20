@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("admin")
 class AdminController(
-    val customerService: CustomerService
+    private val customerService: CustomerService
 ) {
 
-    @GetMapping("/report")
+    @GetMapping("/reports")
     fun report(): String {
         return "This is a report. Only admin can see it!"
     }

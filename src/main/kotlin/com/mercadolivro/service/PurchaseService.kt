@@ -1,8 +1,6 @@
 package com.mercadolivro.service
 
-import com.mercadolivro.enums.BookStatus
 import com.mercadolivro.events.PurchaseEvent
-import com.mercadolivro.model.BookModel
 import com.mercadolivro.model.PurchaseModel
 import com.mercadolivro.repository.PurchaseRepository
 import org.springframework.context.ApplicationEventPublisher

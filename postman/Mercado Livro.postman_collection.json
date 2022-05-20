@@ -9,7 +9,7 @@
 			"name": "Customer",
 			"item": [
 				{
-					"name": "/customer",
+					"name": "/customers",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -35,19 +35,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/customer",
+							"raw": "{{base_url}}/customers",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"customer"
+								"customers"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/customer/{id}",
+					"name": "/customers/{id}",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -70,12 +70,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/customer/8",
+							"raw": "{{base_url}}/customers/8",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"customer",
+								"customers",
 								"8"
 							]
 						}
@@ -83,7 +83,7 @@
 					"response": []
 				},
 				{
-					"name": "/customer",
+					"name": "/customers",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -103,19 +103,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/customer",
+							"raw": "{{base_url}}/customers",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"customer"
+								"customers"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/customer/{id}",
+					"name": "/customers/{id}",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -135,12 +135,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/customer/1",
+							"raw": "{{base_url}}/customers/1",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"customer",
+								"customers",
 								"1"
 							],
 							"query": [
@@ -155,7 +155,7 @@
 					"response": []
 				},
 				{
-					"name": "/customer/{id}",
+					"name": "/customers/{id}",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -175,12 +175,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/customer/1?",
+							"raw": "{{base_url}}/customers/1?",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"customer",
+								"customers",
 								"1"
 							],
 							"query": [
@@ -199,7 +199,7 @@
 			"name": "Book",
 			"item": [
 				{
-					"name": "/book",
+					"name": "/books",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -225,19 +225,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book",
+							"raw": "{{base_url}}/books",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book"
+								"books"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/book/{id}",
+					"name": "/books/{id}",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -260,12 +260,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book/1",
+							"raw": "{{base_url}}/books/1",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book",
+								"books",
 								"1"
 							]
 						}
@@ -273,7 +273,7 @@
 					"response": []
 				},
 				{
-					"name": "/book/active",
+					"name": "/books/active",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -296,12 +296,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book/active",
+							"raw": "{{base_url}}/books/active",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book",
+								"books",
 								"active"
 							]
 						}
@@ -309,7 +309,7 @@
 					"response": []
 				},
 				{
-					"name": "/book",
+					"name": "/books",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -329,19 +329,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book",
+							"raw": "{{base_url}}/books",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book"
+								"books"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/book/{id}",
+					"name": "/books/{id}",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -361,12 +361,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book/2",
+							"raw": "{{base_url}}/books/2",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book",
+								"books",
 								"2"
 							]
 						}
@@ -374,7 +374,7 @@
 					"response": []
 				},
 				{
-					"name": "/book/{id}",
+					"name": "/books/{id}",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -394,12 +394,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/book/1",
+							"raw": "{{base_url}}/books/1",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"book",
+								"books",
 								"1"
 							]
 						}
@@ -412,10 +412,16 @@
 			"name": "Purchase",
 			"item": [
 				{
-					"name": "/purchase",
+					"name": "/purchases",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"customer_id\" : 1,\r\n    \"book_ids\" : [\r\n        1,2\r\n    ]\r\n\r\n}",
@@ -426,12 +432,12 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/purchase",
+							"raw": "{{base_url}}/purchases",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
-								"purchase"
+								"purchases"
 							]
 						}
 					},
@@ -461,7 +467,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"deb1@teste.com\",\r\n    \"password\" : \"123456\"\r\n}",
+							"raw": "{\r\n    \"email\": \"deb@teste.com\",\r\n    \"password\" : \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -486,7 +492,7 @@
 			"name": "Admin",
 			"item": [
 				{
-					"name": "Report",
+					"name": "Reports",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -497,13 +503,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/admin/report",
+							"raw": "{{base_url}}/admin/reports",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"admin",
-								"report"
+								"reports"
 							]
 						}
 					},
