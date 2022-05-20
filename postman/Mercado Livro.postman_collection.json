@@ -14,8 +14,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\" : \"Gustavo\",\r\n    \"email\" : \"teste@teste\"\r\n}",
@@ -26,19 +35,12 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/customer?name=da",
+							"raw": "{{base_url}}/customer",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"customer"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "da"
-								}
 							]
 						}
 					},
@@ -51,7 +53,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\" : \"Gustavo\",\r\n    \"email\" : \"teste@teste\"\r\n}",
@@ -62,14 +70,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/customer/100",
+							"raw": "{{base_url}}/customer/8",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"customer",
-								"100"
+								"8"
 							]
 						}
 					},
@@ -79,10 +86,16 @@
 					"name": "/customer",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"Daniel\",\r\n    \"email\" : \"teste@teste\"\r\n}",
+							"raw": "{\r\n    \"name\" : \"Maria\",\r\n    \"email\" : \"maria@teste.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -90,11 +103,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/customer",
+							"raw": "{{base_url}}/customer",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"customer"
 							]
@@ -106,7 +118,13 @@
 					"name": "/customer/{id}",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\" : \"Gustavo\",\r\n    \"email\" : \"gustavo@teste\"\r\n}",
@@ -117,14 +135,20 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/customer/1",
+							"raw": "{{base_url}}/customer/1",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"customer",
 								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -134,7 +158,13 @@
 					"name": "/customer/{id}",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -145,14 +175,19 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/customer/1",
+							"raw": "{{base_url}}/customer/1?",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"customer",
 								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
 							]
 						}
 					},
@@ -169,8 +204,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "noauth"
+						},
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -181,11 +225,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book",
+							"raw": "{{base_url}}/book",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book"
 							]
@@ -200,7 +243,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -211,11 +260,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book/1",
+							"raw": "{{base_url}}/book/1",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book",
 								"1"
@@ -231,7 +279,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -242,11 +296,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book/active",
+							"raw": "{{base_url}}/book/active",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book",
 								"active"
@@ -259,7 +312,13 @@
 					"name": "/book",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"name\" : \"Livro 1\",\r\n    \"price\" : 100.0,\r\n    \"customer_id\" : 1\r\n}",
@@ -270,11 +329,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book",
+							"raw": "{{base_url}}/book",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book"
 							]
@@ -286,7 +344,13 @@
 					"name": "/book/{id}",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n\r\n    \"name\" : \"Livro 1 Update\",\r\n    \"price:\": 200.0\r\n}",
@@ -297,11 +361,10 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book/2",
+							"raw": "{{base_url}}/book/2",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book",
 								"2"
@@ -314,7 +377,13 @@
 					"name": "/book/{id}",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -325,14 +394,116 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/book/1",
+							"raw": "{{base_url}}/book/1",
 							"host": [
-								"localhost"
+								"{{base_url}}"
 							],
-							"port": "8080",
 							"path": [
 								"book",
 								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchase",
+			"item": [
+				{
+					"name": "/purchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer_id\" : 1,\r\n    \"book_ids\" : [\r\n        1,2\r\n    ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/purchase",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"purchase"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var token = pm.response.headers.get(\"Authorization\")\r",
+									"pm.environment.set(\"token\", token)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"deb1@teste.com\",\r\n    \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/admin/report",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"report"
 							]
 						}
 					},
